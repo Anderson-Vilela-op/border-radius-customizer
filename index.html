@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Border-radius Customizer</title>
+  </head>
+  <body>
+    <section class="content" id="content">
+      <h1>border-radius customizer</h1>
+      <div class="links">
+        <a href="https://github.com" target="_blank">
+          <i class="fa-brands fa-github icon"></i>
+          <span>View on Github</span>
+        </a>
+      </div>
+      <div class="border-radius-container">
+        <div class="border-radius-box-container">
+          <div class="border-radius-box" id="box"></div>
+          <div class="border-radius-controls">
+            <input type="range" oninput="getValuesRounded()" min="0" max="100" value="26" class="control" id="top-left">
+            <input type="range" oninput="getValuesRounded()"  min="0" max="100" value="33" class="control" id="top-right">
+            <input type="range" oninput="getValuesRounded()"  min="0" max="100" value="71" class="control" id="bottom-left">
+            <input type="range" oninput="getValuesRounded()"  min="0" max="100" value="29" class="control" id="bottom-right">
+          </div>
+        </div>
+        <div class="copy">
+          <span>Copy:</span>
+          <i oninput="getCopyValue()" class="fa-solid fa-file-code css-code-snippet"></i>
+          <i oninput="getCopyValue()" class="fa-solid fa-copy snippet-text"></i>
+        </div>
+      </div>
+      
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
