@@ -46,7 +46,7 @@ function copyText() {
   }% ${100 - valuesRounded[2]}%`;
 
   navigator.clipboard.writeText(copyText);
-  alert("Texto copiado: " + copyText);
+  alert("copied text: " + copyText);
 }
 
 function handleClickCopy() {
